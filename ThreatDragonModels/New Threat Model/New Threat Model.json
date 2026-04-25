@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "fdb9efc9-e785-452a-85f0-cc0b78967818",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User\n",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "1d200fbc-7e55-4f50-b236-9119d90a5fef",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Website",
@@ -256,8 +256,8 @@
           },
           {
             "position": {
-              "x": 520,
-              "y": 310
+              "x": 530,
+              "y": 300
             },
             "size": {
               "width": 120,
@@ -278,6 +278,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -361,7 +362,6 @@
               ]
             },
             "id": "789c3b1e-10d5-44d7-8d14-cf73d39d2340",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "Data Store",
@@ -535,6 +535,40 @@
               {
                 "x": 744,
                 "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "d295b2f7-e3e3-43fc-a32e-883eadd593da",
+            "source": {
+              "x": 400,
+              "y": 230
+            },
+            "target": {
+              "x": 840,
+              "y": 200
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 250
               }
             ]
           },
